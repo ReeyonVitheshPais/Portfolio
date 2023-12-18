@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/95b7adb136.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container topfixed">
+        <nav>
+          <h1 class="reeyon"><span class="name">R</span>eeyon.</h1>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="headrer-text">
+          <h1>Hi, I'm <span>Reeyon</span> Vithesh</h1>
+          <p class="para1">Full Stack Developer</p>
+        </div>
+      </div>
+    </div>
+
+    <!-------------About--------------------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="img/reeyon.jpg" class="ree" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="subtitle">About Me</h1>
+            <p>
+              I am a self-starter with strong interpersonal skills.
+               I work efficiently both as an individual contributor as well
+                as along with a team. I seek new challenges and try to think
+                 out-of-the-box while looking for creative solutions to a given
+                  problem
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('Experince')">Experince</p>
+              <p class="tab-links" onclick="opentab('Education')">Education</p>
+            </div>
+
+            <div class="tab-content active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br />Designing Web/App interfaces</li>
+                <li>
+                  <span>Web Development</span><br />
+                  Web app Development
+                </li>
+                <li>
+                  <span>App Development</span><br />Building Android/ios apps
+                </li>
+              </ul>
+            </div>
+            <div class="tab-content" id="Experince">
+              <ul>
+                <li>
+                  <span>2023 - Cuurent</span><br />Full Stack Development Intern
+                </li>
+                <li>
+                  <span>Aug 2022-Sep 2022</span><br />Web Development Intern
+                </li>
+              </ul>
+            </div>
+            <div class="tab-content" id="Education">
+              <ul>
+                <li><span>2023</span><br />Canara Engineering College</li>
+                <li><span>2019</span><br />BGS Pu College</li>
+                <li><span>2017</span><br />BGS High School</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Services ---------------------->
+
+    <div id="services">
+      <div class="container">
+        <h1 class="subtitle">My Sevices</h1>
+        <div class="service-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              Designing engaging and responsive web pages with Maintaining the 
+              appearance of websites by enforcing content standards and Communicating 
+              design ideas using user flows, process flows, site maps, and wireframes
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>Web Development</h2>
+            <p>
+              Builds, designs, and maintains all websites and software applications and Integrate 
+              data from various back-end services and databases, Gather and refine specifications 
+              and requirements based on technical needs
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+
+          <div>
+            <i class="fa-brands fa-app-store-ios"></i>
+            <h2>App Development</h2>
+            <p>
+              Produce clean, efficient code based on specifications
+        Integrate software components and third-party programs
+        Verify and deploy programs and systems
+          Troubleshoot, debug and upgrade existing software
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--------------portflio --------------->
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="subtitle">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="img/work-1.png" alt="" />
+            <div class="layer">
+              <h3>Music App</h3>
+              <p>
+                Music streaming application with set of favourite songs
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="img/work-2.png" alt="" />
+            <div class="layer">
+              <h3>E-Commerce Web Application</h3>
+              <p>
+                E-commerce web application where you we can buy our desired outfit's 
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="img/work-3.png" alt="" />
+            <div class="layer">
+              <h3>Portfolio website</h3>
+              <p>
+                A portfolio website is a curated, online space that 
+                showcases your best work
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <a href="#" class="btn">See More</a>
+      </div>
+    </div>
+
+    <!--- -----contact-->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="subtitle">Contact Me</h1>
+            <p>
+              <i class="fa-sharp fa-solid fa-paper-plane"></i
+              >reeyonvitheshpais22@gmail.com
+            </p>
+            <p><i class="fa-solid fa-square-phone"></i>6361627910</p>
+            <div class="social-icons">
+              <a href="https://facebook.com/"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="images/Resume_Reeyon_4CB19CS084.pdf" download class="btn btn2" target="_blank">Download Cv</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright @2023 portfolio</p>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-content");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      var sidemenu=document.getElementById("sidemenu");
+      function openmenu(){
+        sidemenu.style.right="0";
+
+      }
+      function closemenu(){
+        sidemenu.style.right="-200px";
+        
+      }
+    </script>
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbzy7HqSBfNu5f-15sXeUq1RIHDu1QZ8W75jJqW1EJDeFgCySMvq3fgSWnW1bizumRPYqw/exec'
+      const form = document.forms['submit-to-google-sheet']
+      
+      const msg=document.getElementById("msg");
+
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+              msg.innerHTML = ""
+            },5000)
+            form.reset()
+          })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+  </body>
+</html>
